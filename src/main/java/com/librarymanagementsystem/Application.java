@@ -40,19 +40,19 @@ public class Application {
 
 			var book = new Book("AP1287", "Spring in Action ", "CXEF12389", "Book description");
 			book.addAuthors(new Author("Matt", "dummy description"));
-			book.addCategories(new Category("Spring"));
-			book.addPublishers(new Publisher("Arena"));
+			book.addCategories(new Category("Dummy categary"));
+			book.addPublishers(new Publisher("Dummy publisher"));
 			bookService.createBook(book);
 
 			var book1 = new Book("BP567#R", "Spring Microservices", "KCXEF12389", "Description1");
 			book1.addAuthors(new Author("Maxwell", "Test description1"));
-			book1.addCategories(new Category("Spring"));
+			book1.addCategories(new Category("New category"));
 			book1.addPublishers(new Publisher("publisher2"));
 			bookService.createBook(book1);
 
 			var book2 = new Book("GH67F#", "Spring Boot", "UV#JH", "description2");
 			book2.addAuthors(new Author("Josh Lang", "Test description2"));
-			book2.addCategories(new Category("Spring"));
+			book2.addCategories(new Category("Spring category"));
 			book2.addPublishers(new Publisher("publisher3"));
 			bookService.createBook(book2);
 
